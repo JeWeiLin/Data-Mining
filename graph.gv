@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="FfC <= 0.5\ngini = 0.442\nsamples = 733\nvalue = [491, 242]\nclass = 0", fillcolor="#f2bf9b"] ;
+1 [label="DwD <= 0.5\ngini = 0.483\nsamples = 536\nvalue = [318, 218]\nclass = 0", fillcolor="#f7d7c1"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Allegiances_Stark <= 0.5\ngini = 0.5\nsamples = 371\nvalue = [191, 180]\nclass = 0", fillcolor="#fef8f4"] ;
+1 -> 2 ;
+3 [label="gini = 0.497\nsamples = 340\nvalue = [184, 156]\nclass = 0", fillcolor="#fbece1"] ;
+2 -> 3 ;
+4 [label="gini = 0.35\nsamples = 31\nvalue = [7, 24]\nclass = 1", fillcolor="#73baed"] ;
+2 -> 4 ;
+5 [label="Allegiances_Wildling <= 0.5\ngini = 0.355\nsamples = 165\nvalue = [127, 38]\nclass = 0", fillcolor="#eda774"] ;
+1 -> 5 ;
+6 [label="gini = 0.315\nsamples = 153\nvalue = [123, 30]\nclass = 0", fillcolor="#eba069"] ;
+5 -> 6 ;
+7 [label="gini = 0.444\nsamples = 12\nvalue = [4, 8]\nclass = 1", fillcolor="#9ccef2"] ;
+5 -> 7 ;
+8 [label="Nobility <= 0.5\ngini = 0.214\nsamples = 197\nvalue = [173, 24]\nclass = 0", fillcolor="#e99254"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="SoS <= 0.5\ngini = 0.299\nsamples = 82\nvalue = [67, 15]\nclass = 0", fillcolor="#eb9d65"] ;
+8 -> 9 ;
+10 [label="gini = 0.238\nsamples = 58\nvalue = [50, 8]\nclass = 0", fillcolor="#e99559"] ;
+9 -> 10 ;
+11 [label="gini = 0.413\nsamples = 24\nvalue = [17, 7]\nclass = 0", fillcolor="#f0b58b"] ;
+9 -> 11 ;
+12 [label="Allegiances_House Lannister <= 0.5\ngini = 0.144\nsamples = 115\nvalue = [106, 9]\nclass = 0", fillcolor="#e78c4a"] ;
+8 -> 12 ;
+13 [label="gini = 0.133\nsamples = 112\nvalue = [104, 8]\nclass = 0", fillcolor="#e78b48"] ;
+12 -> 13 ;
+14 [label="gini = 0.444\nsamples = 3\nvalue = [2, 1]\nclass = 0", fillcolor="#f2c09c"] ;
+12 -> 14 ;
+}
